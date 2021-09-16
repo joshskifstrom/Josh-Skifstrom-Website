@@ -1,0 +1,193 @@
+body {
+	font-family: 'Playfair Display SC', sans-serif;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: #000058;
+	color:  white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	border-bottom: 1px solid white;
+	height: 60px;
+}
+
+.nav-left > img {
+	max-width: 100%;
+	height: 35px;
+	margin-left: 10px;
+	padding-top: 10px;
+	/*border:  1px solid white;*/
+}
+
+.nav-left {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 25px;
+	/*border: 1px solid black;*/
+}
+
+.nav-left-header:hover {
+	cursor: pointer;
+	color: lightgray;
+}
+
+.nav-right {
+	display: none;
+}
+
+.nav-mobile {
+  padding: 15px 20px 0px 0px;
+}
+
+.nav-mobile:hover {
+  padding: 15px 20px 0px 0px;
+  color: lightgray;
+}
+
+span {
+	display: block;
+	color:  white;
+    width: 30px;
+    height: 7px;
+    border-bottom: solid white 3px;
+}
+
+span:hover {
+	color: lightgray;
+}
+
+@media (min-width: 900px) {
+	.nav-right {
+		display: flex;
+		align-items: flex-end;
+		list-style: none;
+		height: 40px;
+		margin-right: -10%;	
+		/*border: 1px solid white;*/
+	}
+
+	.nav-mobile {
+	  padding: 10px 20px 0px 0px;
+	}
+
+	span {
+		display: none;
+		color:  whitesmoke;
+		width: 30px;
+		height: 7px;
+		border-bottom: solid white 3px;
+	}
+}
+
+.nav-right > li:hover {
+	color: lightgray;
+}
+
+.nav-right > li {
+	margin: 0 20px;
+	cursor: pointer;
+}
+
+.main-background-image {
+	background-image: url("../Pics/main-background-image.jpeg");
+	height: 488px;
+	background-position: center top;
+	background-size: cover;
+}
+
+.section-about {
+	display:  flex;
+	justify-content: space-between;
+	background-color: lightgrey;
+	height:  800px;
+	opacity: 0;
+}
+
+.about-p {
+	margin-top: 15%;
+	padding: 0px 85px 0px 85px;
+}
+
+.about-me-back-img-container {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  height: 600px;
+  grid-gap: 15px;
+  background-color: #e3e4e6;
+  padding: 15px;
+}
+
+@media (max-width: 1300px) {
+	.about-me-back-img-container {
+	  display: grid;
+	  grid-template-columns: 250px 250px;
+	  height: 600px;
+	  grid-gap: 15px;
+	  background-color: #e3e4e6;
+	  padding: 15px;
+	}
+}
+
+@media (max-width: 900px) {
+	.about-me-back-img-container {
+	  display: grid;
+	  grid-template-columns: 300px;
+	  height: 1250px;
+	  grid-gap: 15px;
+	  background-color: #e3e4e6;
+	  padding: 15px;
+	}
+}
+
+.show {
+  padding-top: 55px;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.hide {
+	position: fixed;
+	right: 100;
+}
+
+.about-me-image {
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.about-me-img-1 {
+	background-image: url("../Pics/Tayosh.jpeg");
+}
+
+.about-me-img-2 {
+	background-image: url("../Pics/sbnc_band.jpeg");
+}
+
+.about-me-img-3 {
+	background-image: url("../Pics/allura.jpeg");
+}
+
+.about-me-img-4 {
+	background-image: url("../Pics/wild_stallions.jpeg");
+}
+
+.about-me-img-5 {
+	background-image: url("../Pics/josh_solo_thailand.jpeg");
+}
+
+.about-me-img-6 {
+	background-image: url("../Pics/josh_solo_thailand.jpeg");
+}
