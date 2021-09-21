@@ -170,26 +170,103 @@ span:hover {
 }
 
 .about-me-img-1 {
+	color: transparent;
+	background-image: url("../Pics/Tayosh.jpeg");
+}
+
+.about-me-img-1:hover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.75;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+	color: white;
 	background-image: url("../Pics/Tayosh.jpeg");
 }
 
 .about-me-img-2 {
+	color: transparent;	
+	background-image: url("../Pics/sbnc_band.jpeg");
+}
+
+.about-me-img-2:hover {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 24px;
+	font-weight: bold;
+	opacity: 0.75;
+	cursor: pointer;
+	color: white;
 	background-image: url("../Pics/sbnc_band.jpeg");
 }
 
 .about-me-img-3 {
+	color: transparent;
+	background-image: url("../Pics/allura.jpeg");
+}
+
+.about-me-img-3:hover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	font-weight: bold;
+	opacity: 0.75;
+	cursor: pointer;
+	color: white;
 	background-image: url("../Pics/allura.jpeg");
 }
 
 .about-me-img-4 {
+	color: transparent;
+	background-image: url("../Pics/wild_stallions.jpeg");
+}
+
+.about-me-img-4:hover {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	font-size: 24px;
+	font-weight: bold;
+	opacity: 0.75;
+	cursor: pointer;
+	color: white;
 	background-image: url("../Pics/wild_stallions.jpeg");
 }
 
 .about-me-img-5 {
+	color: transparent;
+	background-image: url("../Pics/josh_solo_thailand.jpeg");
+}
+.about-me-img-5:hover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	font-weight: bold;
+	opacity: 0.75;
+	cursor: pointer;
+	color: white;
 	background-image: url("../Pics/josh_solo_thailand.jpeg");
 }
 
 .about-me-img-6 {
+	color: transparent;
+	background-image: url("../Pics/josh_solo_thailand.jpeg");
+}
+
+.about-me-img-6:hover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	font-weight: bold;
+	opacity: 0.75;
+	cursor: pointer;
+	color: white;
 	background-image: url("../Pics/josh_solo_thailand.jpeg");
 }
 
