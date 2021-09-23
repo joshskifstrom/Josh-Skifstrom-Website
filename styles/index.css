@@ -11,7 +11,7 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 100;
+	z-index: 10;
 	border-bottom: 1px solid whitesmoke;
 	height: 60px;
 }
@@ -43,6 +43,10 @@ body {
 
 .nav-mobile {
   padding: 15px 20px 0px 0px;
+}
+
+.nav-mobile:hover {
+	cursor: pointer;
 }
 
 .nav-mobile:hover {
@@ -102,6 +106,14 @@ span:hover {
 }
 
 .section-about {
+	display:  none;
+	justify-content: space-between;
+	background-color: whitesmoke;
+	height:  800px;
+	opacity: 0;
+}
+
+.section-music {
 	display:  none;
 	justify-content: space-between;
 	background-color: whitesmoke;
@@ -268,6 +280,56 @@ span:hover {
 	cursor: pointer;
 	color: white;
 	background-image: url("../Pics/josh_solo_thailand.jpeg");
+}
+
+.dropdown-menu {
+  background-color: white;
+  /*box-shadow: 0 0 2rem rgba(0,0,0,.1); */
+  display: none;
+  position: absolute;
+  top: 40px;
+  width: 175px;
+  z-index: 20;
+}
+
+.menu-item-list {
+	list-style-type: 	none;
+	padding: 0;
+}
+
+.menu-item-list > li {
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.li-one:hover {
+	background-color: lightgray;
+	cursor: pointer;
+}
+
+.li-two:hover {
+	background-color: lightgray;
+	cursor: pointer;
+}
+
+.li-three:hover {
+	background-color: lightgray;
+	cursor: pointer;
+}
+
+.li-four:hover {
+	background-color: lightgray;
+	cursor: pointer;
+}
+
+.dropdown-menu#menu-1 {
+  right: 10px;
+}
+
+.show-menu {
+  display: block;
 }
 
 .footer {
