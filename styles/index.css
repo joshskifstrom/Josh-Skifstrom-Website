@@ -146,7 +146,7 @@ span:hover {
 	}
 }
 
-@media (max-width: 900px) {
+/*@media (max-width: 900px) {
 	.about-me-back-img-container {
 	  display: grid;
 	  grid-template-columns: 300px;
@@ -155,7 +155,7 @@ span:hover {
 	  background-color: white;
 	  padding: 15px;
 	}
-}
+}*/
 
 .show {
   padding-top: 55px;
