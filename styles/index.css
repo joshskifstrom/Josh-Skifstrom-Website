@@ -258,7 +258,7 @@ span:hover {
 
 .about-me-img-5 {
 	color: transparent;
-	background-image: url("../Pics/yeti.jpeg");
+	background-image: url("../Pics/yetis.jpeg");
 }
 .about-me-img-5:hover {
 	display: flex;
@@ -269,7 +269,7 @@ span:hover {
 	opacity: 0.75;
 	cursor: pointer;
 	color: white;
-	background-image: url("../Pics/yeti.jpeg");
+	background-image: url("../Pics/yetis.jpeg");
 }
 
 .about-me-img-6 {
