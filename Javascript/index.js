@@ -1,5 +1,7 @@
 window.addEventListener("load", function() {
 	
+	analytics.page("Website Page","Home");
+	
 	//About Section
 	const about = document.getElementById("about");
 	const aboutMobile = document.getElementById("about-mobile");
