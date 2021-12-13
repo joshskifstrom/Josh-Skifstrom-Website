@@ -12,6 +12,11 @@ window.addEventListener("load", function() {
 		sectionAbout.classList.add("show");
 		sectionMusic.classList.remove("show");
 		mainBckImg.classList.add("hide");
+		
+		analytics.track("About Clicked", {
+			plan: "Pro Annual",
+			accountType: "Musician"
+		});
 	}
 
 	//Music Section
