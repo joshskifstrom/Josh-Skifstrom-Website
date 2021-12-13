@@ -11,12 +11,9 @@ window.addEventListener("load", function() {
 	function aboutSection() {
 		sectionAbout.classList.add("show");
 		sectionMusic.classList.remove("show");
+		sectionShows.classList.remove("show");
+		sectionContact.classList.remove("show");
 		mainBckImg.classList.add("hide");
-		
-		analytics.track("About Clicked", {
-			plan: "Pro Annual",
-			accountType: "Musician"
-		});
 	}
 
 	//Music Section
@@ -28,6 +25,36 @@ window.addEventListener("load", function() {
 	
 	function musicSection() {
 		sectionMusic.classList.add("show");
+		sectionAbout.classList.remove("show");
+		sectionShows.classList.remove("show");
+		sectionContact.classList.remove("show");
+		mainBckImg.classList.add("hide");
+	}
+
+	//Shows Section
+	const shows = document.getElementById("shows");
+	const sectionShows = document.getElementById("section-shows-id");
+
+	shows.addEventListener("click",showsSection);
+
+	function showsSection() {
+		sectionShows.classList.add("show");
+		sectionMusic.classList.remove("show");
+		sectionAbout.classList.remove("show");
+		sectionContact.classList.remove("show");
+		mainBckImg.classList.add("hide");
+	}
+
+	//Contact Section
+	const contact = document.getElementById("contact");
+	const sectionContact = document.getElementById("section-contact-id");
+
+	contact.addEventListener("click", contactSection);
+
+	function contactSection () {
+		sectionContact.classList.add("show");
+		sectionShows.classList.remove("show");
+		sectionMusic.classList.remove("show");
 		sectionAbout.classList.remove("show");
 		mainBckImg.classList.add("hide");
 	}
@@ -41,6 +68,8 @@ window.addEventListener("load", function() {
 		mainBckImg.classList.remove("hide");
 		sectionAbout.classList.remove("show");
 		sectionMusic.classList.remove("show");
+		sectionShows.classList.remove("show");
+		sectionContact.classList.remove("show");
 	}
 
 	const navMobile = document.getElementById('nav-mobile-id');
@@ -67,6 +96,28 @@ window.addEventListener("load", function() {
 
 	function removeMenuList() {
 	  menu1Dropdown.classList.remove("show-menu");
+	}
+
+	//form function
+	const name = document.getElementById('name');
+	const phone = document.getElementById('phone');
+	const email = document.getElementById('mail');
+	const userMessage = document.getElementById('msg');
+	const sendButton = document.getElementById('send-button');
+	
+	sendButton.addEventListener("click",sendForm);
+
+	function sendForm() {
+		let nameValue = name.value;
+		let phoneValue = phone.value;
+		let emailValue = email.value;
+		let userMessageValue = userMessage.value;
+
+		console.log("name: " + nameValue + '\n' + 
+		"phone: " + phoneValue + '\n' + 
+		"emailValue: " + emailValue + '\n' + 
+		"userMessageValue: " + userMessageValue
+		);
 	}
 
 })
