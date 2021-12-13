@@ -1,6 +1,6 @@
 window.addEventListener("load", function() {
 	
-	analytics.page("Website Page","Home");
+	analytics.page("Website Page", "Home");
 	
 	//About Section
 	const about = document.getElementById("about");
