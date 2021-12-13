@@ -16,6 +16,8 @@ window.addEventListener("load", function() {
 		sectionShows.classList.remove("show");
 		sectionContact.classList.remove("show");
 		mainBckImg.classList.add("hide");
+		
+		analytics.page("Website Page","About");
 	}
 
 	//Music Section
