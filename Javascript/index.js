@@ -1,6 +1,11 @@
 window.addEventListener("load", function() {
 	
 	analytics.page("Website Page", "Home");
+	analytics.identify("97980cfea0067", {
+	  name: "Josh Skifstrom",
+	  email: "jskifstrom@gmail.com",
+	  logins: 1
+	});
 	
 	//About Section
 	const about = document.getElementById("about");
