@@ -1,5 +1,7 @@
 body {
 	font-family: 'Playfair Display SC', sans-serif;
+	position: relative;
+	min-height: 100vh;
 }
 
 .nav {
@@ -101,17 +103,19 @@ span:hover {
 .main-background-image {
 	background-image: url("../Pics/background_image.jpeg");
 	height: 740px;
-	background-position: center top;
+	background-position: center center;
 	background-size: cover;
-	background-size: 1500px;
 }
 
 .section-about {
 	display:  none;
 	justify-content: space-between;
 	background-color: whitesmoke;
-	height:  800px;
+	height:  1100px;
 	opacity: 0;
+	background-image: url("../Pics/outdoor2.jpeg");
+	background-position: center right;
+	background-size: cover;
 }
 
 .section-music {
@@ -125,11 +129,73 @@ span:hover {
 	background-size: cover;
 }
 
+.section-shows {
+	display:  none;
+	justify-content: center;
+	background-color: whitesmoke;
+	padding-bottom: 85px;
+	text-align: center;
+	opacity: 0;
+	background-image: url("../Pics/outdoor.jpeg");
+	background-position: center center;
+	background-size: cover;
+}
+
+.section-contact {
+	display:  none;
+	justify-content: center;
+	background-color: whitesmoke;
+	text-align: center;
+	height: 750px;
+	margin: 0;
+	opacity: 0;
+	background-image: url("../Pics/outdoor3.jpeg");
+	background-position: center top;
+	background-size: cover;
+}
+
+.shows-container {
+	padding-top: 2.5rem;
+}
+
+.shows-header {
+	color: white;
+	font-weight: bolder;
+	font-size: 36px;
+}
+
+.show-1 {
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+}
+
+.show-2 {
+	padding-bottom: 2.5rem;
+}
+
+.show-1-title {
+	padding-bottom: .5rem;
+	color: white;
+}
+
+.show-2-title {
+	padding-bottom: .5rem;
+	color: white;
+}
+
+.show-3-title {
+	padding-bottom: .5rem;
+	color: white;
+}
+
 .about-p {
-	margin-top: 7%;
-	padding: 0px 85px 0px 85px;
+	margin: 260px 85px 350px 85px;
+	padding: 10px 40px 0px 40px;
 	font-size: 20px;
 	text-align: center;
+	background-color: white;
+	opacity: .5;
+	color: black;
 }
 
 .about-me-back-img-container {
@@ -137,8 +203,9 @@ span:hover {
   grid-template-columns: 250px 250px 250px;
   height: 600px;
   grid-gap: 15px;
-  background-color: white;
+  background-color: transparent;
   padding: 15px;
+  padding-top: 260px;
 }
 
 @media (max-width: 1300px) {
@@ -197,7 +264,6 @@ span:hover {
 	justify-content: center;
 	align-items: center;
 	opacity: 0.75;
-	font-size: 24px;
 	font-weight: bold;
 	cursor: pointer;
 	color: white;
@@ -214,7 +280,6 @@ span:hover {
 	justify-content: flex-end;
 	align-items: center;
 	padding-right: 75px;
-	font-size: 24px;
 	font-weight: bold;
 	opacity: 0.75;
 	cursor: pointer;
@@ -231,7 +296,6 @@ span:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 24px;
 	font-weight: bold;
 	opacity: 0.75;
 	cursor: pointer;
@@ -248,7 +312,6 @@ span:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;	
-	font-size: 24px;
 	font-weight: bold;
 	opacity: 0.75;
 	cursor: pointer;
@@ -264,7 +327,6 @@ span:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 24px;
 	font-weight: bold;
 	opacity: 0.75;
 	cursor: pointer;
@@ -281,7 +343,6 @@ span:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 24px;
 	font-weight: bold;
 	opacity: 0.75;
 	cursor: pointer;
@@ -291,7 +352,6 @@ span:hover {
 
 .dropdown-menu {
   background-color: white;
-  /*box-shadow: 0 0 2rem rgba(0,0,0,.1); */
   display: none;
   position: absolute;
   top: 10px;
@@ -339,13 +399,59 @@ span:hover {
   display: block;
 }
 
+.form-container {
+	height: 250px;
+}
+
+button {
+	cursor: pointer;
+}
+
+ul {
+	margin: 0px;
+	padding:0px;
+}
+
+li {
+	list-style-type: none;
+}
+
+label {
+	width: 200px;
+	padding: 12px 20px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display:block;
+	position:relative;
+	}
+
+input {
+	width: 100%;
+}
+
+input > span {
+	position:absolute;
+	left:0;
+	}
+
+textarea {
+	width: 400px;
+	height: 150px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
 .footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 4.5rem; 
 	background-color: #000058;
 	color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 80px;
 	border-top: 1px solid whitesmoke;
 }
 
