@@ -131,11 +131,6 @@ window.addEventListener("load", function() {
 
 		sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-
-		// const API_Key = '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';
-		// sgMail.setApiKey(API_Key);
-
-
 		const msg = {
 		  to: 'jskifstrom@gmail.com',
 		  from: 'jskifstrom@gmail.com', // Use the email address or domain you verified above
