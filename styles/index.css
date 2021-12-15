@@ -246,6 +246,10 @@ span:hover {
 	right: 100;
 }
 
+.hide-form {
+	opacity: 0;
+}
+
 .about-me-image {
   background-size: cover;
   background-position: center center;
