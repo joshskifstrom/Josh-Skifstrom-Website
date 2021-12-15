@@ -113,6 +113,7 @@ window.addEventListener("load", function() {
 	const email = document.getElementById('mail');
 	const userMessage = document.getElementById('msg');
 	const sendButton = document.getElementById('send-button');
+	const formContainer = document.getElementById('form-container-id');
 	
 	sendButton.addEventListener("click",sendForm);
 
@@ -122,11 +123,48 @@ window.addEventListener("load", function() {
 		let emailValue = email.value;
 		let userMessageValue = userMessage.value;
 
-		console.log("name: " + nameValue + '\n' + 
-		"phone: " + phoneValue + '\n' + 
-		"emailValue: " + emailValue + '\n' + 
-		"userMessageValue: " + userMessageValue
-		);
+		formContainer.classList.add("hide-form");
+		
+		// using Twilio SendGrid's v3 Node.js Library
+		const sgMail = require('@sendgrid/mail')
+		//import sgMail from '@sendgrid/mail';
+
+		sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+
+		// const API_Key = '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';
+		// sgMail.setApiKey(API_Key);
+
+
+		const msg = {
+		  to: 'jskifstrom@gmail.com',
+		  from: 'jskifstrom@gmail.com', // Use the email address or domain you verified above
+		  subject: 'Sending with Twilio SendGrid is Fun',
+		  text: 'and easy to do anywhere, even with Node.js',
+		  html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+		};
+		//ES6
+		sgMail
+		  .send(msg)
+		  .then(() => {}, error => {
+			console.error(error);
+		
+			if (error.response) {
+			  console.error(error.response.body)
+			}
+		  });
+		//ES8
+		(async () => {
+		  try {
+			await sgMail.send(msg);
+		  } catch (error) {
+			console.error(error);
+		
+			if (error.response) {
+			  console.error(error.response.body)
+			}
+		  }
+		})();
 	}
 
 })
